@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { numberWithCommas } from "../../../utils/numberWithCommas";
 import { Link } from "react-router-dom";
@@ -65,7 +65,7 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
             <FontAwesomeIcon icon={faXmark} size="xl" />
           </button>
           <h1 style={{ textAlign: "center", marginTop: "30px" }}>
-            Detail Transaksi
+          Transaction Details
           </h1>
 
           <hr className="lineBreak" />
@@ -73,7 +73,7 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
           {buyDetail.map((data) => (
             <div className="buyDetailWrap" key={data.orderid}>
               <div className="orderStatus">
-                <h3>Belum Lunas</h3>
+                <h3>Not yet paid off</h3>
 
                 <hr className="lineBreakDot" />
 
@@ -89,13 +89,13 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
                   </div>
 
                   <div className="dateBuy">
-                    <p>Tanggal Pembelian</p>
+                    <p>Purchase date</p>
                     <p>{data.dateBuy}</p>
                   </div>
                 </div>
               </div>
               <div className="detailProduct">
-                <h3>Detail Produk</h3>
+                <h3>Detail Product</h3>
                 {data.itemCheckout.map((list) => (
                   <div className="productHistoryList" key={list.id}>
                     <img src={list.img} alt={list.nama} width={120} />
@@ -104,15 +104,15 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
                         <h3>{list.nama}</h3>
                       </Link>
                       <p>
-                        {list.qty} x Rp.{numberWithCommas(list.harga)}
+                        {list.qty} x Rs.{numberWithCommas(list.harga)}
                       </p>
                     </div>
 
                     <hr className="lineBreakDetail" />
 
                     <div className="hargaNrebuy">
-                      <h3>Total Harga</h3>
-                      <h4>Rp.{numberWithCommas(list.harga * list.qty)}</h4>
+                      <h3>Total price</h3>
+                      <h4>Rs.{numberWithCommas(list.harga * list.qty)}</h4>
                       <button
                         className="btnRebuy"
                         onClick={() => {
@@ -121,7 +121,7 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
                         }}
                         style={{ marginLeft: "0px" }}
                       >
-                        Beli Lagi
+                        Buy More
                       </button>
                     </div>
                   </div>
@@ -130,14 +130,14 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
 
               {data.address.map((alamat) => (
                 <div className="infoPengiriman" key={alamat.penerima}>
-                  <h3>Info Pengiriman</h3>
+                  <h3>Shipping Info</h3>
                   <div className="kurir">
                     <p>Jenis Pengiriman</p>
                     <p> : {data.kurir}</p>
                   </div>
 
                   <div className="alamat">
-                    <p>Alamat</p>
+                    <p>Address</p>
                     <div className="detailAlamat">
                       <p> : {alamat.penerima}</p>
                       <p>{alamat.nomorhp}</p>
@@ -150,29 +150,29 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
               ))}
 
               <div className="rincianPembayaran">
-                <h3>Rincian Pembayaran</h3>
+                <h3>Payment details</h3>
                 <div className="metodePembayaran">
-                  <p>Metode Pembayaran</p>
+                  <p>Payment method</p>
                   <p>{data.pembayaran}</p>
                 </div>
 
                 <hr className="lineBreakDot" />
 
                 <div className="totalHargaPembelian">
-                  <p>Total Harga ( {data.totalitem} Barang )</p>
-                  <p>Rp.{numberWithCommas(data.totalharga)}</p>
+                  <p>Total price ( {data.totalitem} Goods )</p>
+                  <p>Rs.{numberWithCommas(data.totalharga)}</p>
                 </div>
 
                 <div className="totalOngkir">
-                  <p>Total Ongkos Kirim ( {data.kurir} )</p>
-                  <p>Rp.{numberWithCommas(data.ongkir)}</p>
+                  <p>Total Shipping Cost ( {data.kurir} )</p>
+                  <p>Rs.{numberWithCommas(data.ongkir)}</p>
                 </div>
 
                 <hr className="lineBreakDot" />
 
                 <div className="totalBelanja">
-                  <h3>Total Belanja</h3>
-                  <h3>Rp.{numberWithCommas(data.totaltagihan)}</h3>
+                  <h3>Total Shopping</h3>
+                  <h3>Rs.{numberWithCommas(data.totaltagihan)}</h3>
                 </div>
               </div>
             </div>
@@ -184,3 +184,4 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
 };
 
 export default ModalDetailOrder;
+*/

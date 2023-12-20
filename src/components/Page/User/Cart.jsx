@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/*import React, { useEffect, useState } from "react";
 import { UserAuth } from "../../context/authContext";
 import { updateDoc, doc, onSnapshot, arrayUnion } from "firebase/firestore";
 import { db } from "../../../utils/firebaseConfig";
@@ -88,7 +88,7 @@ const Cart = () => {
     );
     setNotes(text.target.value);
     console.log(text.target.value);
-  } */
+  } 
 
   const productRef = doc(db, "users", `${user?.email}`);
   const removeProduct = async (itemID) => {
@@ -143,7 +143,7 @@ const Cart = () => {
           }
         }, 0)
       : null;
-  }; */
+  }; 
 
   const totalBayar = Array.isArray(cartItem)
     ? cartItem.reduce(function (result, item) {
@@ -202,21 +202,21 @@ const Cart = () => {
               }
               onChange={handleSelected}
             />
-            <label>Pilih Semua Item</label> */}
+            <label>Pilih Semua Item</label> }
               <h3>Cart Product</h3>
             </div>
-            {/* <button>Hapus Item</button> */}
+            {/* <button>Hapus Item</button> }
           </div>
           <div className="itemsCartUserBox">
             {itemCount === 0 ? (
               <div className="emptyCartPage">
                 <img src={EmptyCart} alt="emptycartImg" width={200} />
                 <p>
-                  <b>Keranjang Kamu Kosong</b>
+                  <b>Your cart is empty</b>
                 </p>
                 <p>
-                  Sepertinya kamu belum menambahkan apapun ke keranjang. Pilih
-                  menu product untuk mulai menelusuri produk - produk kami
+                It looks like you haven't added anything to your cart. Choose
+                  product menu to start browsing our products
                 </p>
               </div>
             ) : (
@@ -231,7 +231,7 @@ const Cart = () => {
                       value={items?.isChecked || false}
                       checked={items?.isChecked || false}
                       onChange={handleSelected}
-                    /> */}
+                    /> }
                           <img src={items.img} alt="productImage" width={150} />
                           <div className="descItem">
                             <h3
@@ -244,8 +244,8 @@ const Cart = () => {
                               {items.nama}
                             </h3>
                             <p>{items.tagline}</p>
-                            <h4>Rp.{numberWithCommas(items.harga)}</h4>
-                            {/* <input type="text" placeholder="Tulis Catatan Tambahan" /> */}
+                            <h4>Rs.{numberWithCommas(items.harga)}</h4>
+                            {/* <input type="text" placeholder="Tulis Catatan Tambahan" /> }
                           </div>
                         </div>
 
@@ -295,10 +295,10 @@ const Cart = () => {
           </div>
 
           <div className="ringkasanBelanjaMobile">
-            <h2>Ringkasan Belanja</h2>
+            <h2>Shopping Summary</h2>
             <div className="totalHarga">
-              <h4>Total Harga ( {itemCount} Produk )</h4>
-              <h4>Rp. {numberWithCommas(totalBayar)}</h4>
+              <h4>Total price ( {itemCount} Goods )</h4>
+              <h4>Rs. {numberWithCommas(totalBayar)}</h4>
             </div>
             <div className="btnAction">
               {itemCount === 0 ? (
@@ -320,17 +320,17 @@ const Cart = () => {
           </div>
 
           <div className="wishListCollection">
-            <h2>Wujudkan Wish List Produk Anda</h2>
+            <h2>Make your product wish list come true</h2>
             <hr className="itemLineBreak" />
             <div className="wishListItem">
               {wishListCount === 0 ? (
                 <div className="emptyWishList">
                   <img src={emptyWishList} alt="emptywishlist" width={300} />
                   <h2>
-                    Tampak Nya Kamu Belum memasukan produk ke dalam Wishlist
+                  It looks like you haven't added the product to your wishlist
                   </h2>
                   <p>
-                    Masuk menu product dan pilih produk yang ingin kamu sukai
+                  Enter the product menu and select the product you want to like
                   </p>
                 </div>
               ) : (
@@ -350,7 +350,7 @@ const Cart = () => {
                             <div className="descWishlist">
                               <h3>{items.nama}</h3>
                               <p>{items.tagline}</p>
-                              <h4>Rp. {numberWithCommas(items.harga)}</h4>
+                              <h4>Rs. {numberWithCommas(items.harga)}</h4>
                             </div>
                           </div>
                         </React.Fragment>
@@ -363,10 +363,10 @@ const Cart = () => {
         </div>
 
         <div className="ringkasanBelanja">
-          <h2>Ringkasan Belanja</h2>
+          <h2>Shopping Summary</h2>
           <div className="totalHarga">
-            <h4>Total Harga ( {itemCount} Produk )</h4>
-            <h4>Rp. {numberWithCommas(totalBayar)}</h4>
+            <h4>Total price ( {itemCount} Product)</h4>
+            <h4>Rs. {numberWithCommas(totalBayar)}</h4>
           </div>
           <div className="btnAction">
             {itemCount === 0 ? (
@@ -392,3 +392,4 @@ const Cart = () => {
 };
 
 export default Cart;
+*/

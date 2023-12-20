@@ -56,7 +56,7 @@ export default class Testimoni extends Component {
         <Slider {...settings}>
           <div>
             <TestimoniCard
-              testi="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. "
+              testi="Children are also flattered by the keyboard. He needs to invest in the real estate, but not in the adipiscing business. "
               avatar={Avatar}
               name="Jane Cooper"
               rating="4.3"
@@ -64,7 +64,7 @@ export default class Testimoni extends Component {
           </div>
           <div>
             <TestimoniCard
-              testi="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. "
+              testi="Children are also flattered by the keyboard. He needs to invest in the real estate, but not in the adipiscing business. "
               avatar={Avatar}
               name="Jane Cooper"
               rating="4.3"
@@ -72,7 +72,7 @@ export default class Testimoni extends Component {
           </div>
           <div>
             <TestimoniCard
-              testi="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. "
+              testi="Children are also flattered by the keyboard. He needs to invest in the real estate, but not in the adipiscing business. "
               avatar={Avatar}
               name="Jane Cooper"
               rating="4.3"
@@ -80,7 +80,7 @@ export default class Testimoni extends Component {
           </div>
           <div>
             <TestimoniCard
-              testi="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. "
+              testi="Children are also flattered by the keyboard. He needs to invest in the real estate, but not in the adipiscing business. "
               avatar={Avatar}
               name="Jane Cooper"
               rating="4.3"
@@ -88,12 +88,21 @@ export default class Testimoni extends Component {
           </div>
           <div>
             <TestimoniCard
-              testi="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non. "
+              testi="Children are also flattered by the keyboard. He needs to invest in the real estate, but not in the adipiscing business. "
               avatar={Avatar}
               name="Jane Cooper"
               rating="4.3"
             />
           </div>
+          <div>
+            <TestimoniCard
+              testi="Children are also flattered by the keyboard. He needs to invest in the real estate, but not in the adipiscing business. "
+              avatar={Avatar}
+              name="Jane Cooper"
+              rating="4.3"
+            />
+          </div>
+          
         </Slider>
       </div>
     );

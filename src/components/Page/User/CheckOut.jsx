@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/*import React, { useEffect, useState } from "react";
 import { UserAuth } from "../../context/authContext";
 import { updateDoc, doc, onSnapshot, arrayRemove, collection, addDoc } from "firebase/firestore";
 import { db } from "../../../utils/firebaseConfig";
@@ -185,15 +185,15 @@ const CheckOut = () => {
       <div className="checkOutContainer">
         <div className="checkoutWrap">
           <div className="alamatUser">
-            <h3>Alamat Pengiriman</h3>
+            <h3>Shipping address</h3>
             <hr className="itemLineBreak" />
             {addressCount === 0 ? (
               <div className="addressEmpty">
                 <img src={addAddresImg} alt="addaddress" width={200} />
-                <h4>Tampak Nya Alamat Pengiriman Kamu Kosong</h4>
-                <h4>Tambah Alamat Pengiriman Untuk Melanjutkan</h4>
+                <h4>It looks like your shipping address is empty</h4>
+                <h4>Add Shipping Address To Continue</h4>
                 <p onClick={() => setModalAddress(true)}>
-                  Tambah Alamat Pengiriman
+                Add Shipping Address
                 </p>
               </div>
             ) : Array.isArray(address) ? (
@@ -206,7 +206,7 @@ const CheckOut = () => {
                   <p>
                     {data.alamat}, {data.kota}, {data.kodepos}
                   </p>
-                  <a onClick={() => setModalEditAddress(true)} style={{cursor: "pointer"}}>Ubah Alamat</a>
+                  <a onClick={() => setModalEditAddress(true)} style={{cursor: "pointer"}}>Change Address</a>
                 </div>
               ))
             ) : null}
@@ -222,8 +222,8 @@ const CheckOut = () => {
                     <div className="descItemCheckout">
                       <h3>{item.nama}</h3>
                       <p>{item.tagline}</p>
-                      <h4>Rp. {numberWithCommas(item.harga)}</h4>
-                      <p>{item.qty} Barang</p>
+                      <h4>Rs. {numberWithCommas(item.harga)}</h4>
+                      <p>{item.qty} Goods</p>
                     </div>
                   </div>
                 ))
@@ -231,10 +231,10 @@ const CheckOut = () => {
 
             <div className="kurirPengiriman">
               <div className="selectKurir">
-                <label>Pilih kurir Pengiriman</label>
+                <label>Select Delivery courier</label>
                 <select
                   name="kurir"
-                  /* value={ongkir} */
+                  /* value={ongkir} 
                   onChange={(e) => {
                     setOngkir(e.target.value);
                     setJenisKurir(
@@ -243,7 +243,7 @@ const CheckOut = () => {
                   }}
                 >
                   <option value="" selected disabled>
-                    Pilih Kurir
+                  Select Courier
                   </option>
                   {kurir.map((data) => (
                     <option
@@ -258,12 +258,12 @@ const CheckOut = () => {
               </div>
             </div>
 
-            <p>Pilih Metode Pembayaran</p>
+            <p>Select Payment Method</p>
             <div className="metodePembayaran">
               <div className="bank">
                 <div className="mandiri">
                   <img src={Mandiri} alt="mandiri" width={100} />
-                  <label htmlFor="mandiri">Mandiri</label>
+                  <label htmlFor="mandiri">Independent</label>
                   <input
                     type="radio"
                     id="mandiri"
@@ -302,25 +302,25 @@ const CheckOut = () => {
         </div>
 
         <div className="ringkasanCheckout">
-          <h3>Ringkasan Belanja</h3>
+          <h3>Shopping Summary</h3>
           <div className="totalCheckout">
             <div className="totalBayarItem">
-              <h4>Total Harga ( {itemCount} Barang )</h4>
-              <h4>Rp. {numberWithCommas(totalHarga)}</h4>
+              <h4>Total price ( {itemCount} Goods )</h4>
+              <h4>Rs. {numberWithCommas(totalHarga)}</h4>
             </div>
             <div className="totalBayarOngkir">
               <h4>Total Ongkos Kirim {jenisKurir}</h4>
-              <h4>Rp. {numberWithCommas(ongkir)}</h4>
+              <h4>Rs. {numberWithCommas(ongkir)}</h4>
             </div>
             <div className="totalTagihan">
               <h4>Total Tagihan</h4>
-              <h4>Rp. {numberWithCommas(totalTagihan)}</h4>
+              <h4>Rs. {numberWithCommas(totalTagihan)}</h4>
             </div>
           </div>
           <div className="btnCheckout">
             {addressCount === 0 || bank === "" || ongkir === 0 ? (
               <button className="btnDisableCheckout">
-                Lengkapi prosedur checkout
+                Complete the checkout procedure
               </button>
             ) : (
               <button
@@ -328,7 +328,7 @@ const CheckOut = () => {
                 className="btnBayar"
                 onClick={checkoutDone}
               >
-                Bayar
+                Pay
               </button>
             )}
           </div>
@@ -339,3 +339,4 @@ const CheckOut = () => {
 };
 
 export default CheckOut;
+*/

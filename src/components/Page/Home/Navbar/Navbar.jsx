@@ -18,7 +18,7 @@ import "../Navbar/DropMenuUser.css";
 import "../Navbar/DropMenuCart.css";
 import "../Navbar/HamburgerMenu.css";
 
-import Logo from "../../../assets/Logo.png";
+import Logo from "../../../assets/furniture logo.jpeg";
 import MenuHamburgerIcon from "../../../assets/HamburgerMenuIcon.png";
 import CrossIcon from "../../../assets/CrossIcon.png";
 import UserProfilePict from "../../../assets/blank-profile-picture.png";
@@ -106,14 +106,14 @@ const Navbar = () => {
                   <div className="profileBtn">
                     <FontAwesomeIcon icon={faUser} size="sm" />
                     <Link to="/profile" onClick={closeSideBar}>
-                      Profile Saya
+                     My Profile 
                     </Link>
                   </div>
 
                   <div className="pembelianBtn">
                     <FontAwesomeIcon icon={faCashRegister} size="sm" />
                     <Link to="/orderList" onClick={closeSideBar}>
-                      Pembelian
+                    Purchase
                     </Link>
                   </div>
 
@@ -213,10 +213,10 @@ const Navbar = () => {
               {itemCount === 0 ? (
                 <div className="emptyCart">
                   <img src={EmptyCartImg} alt="emptyCart" width={200} />
-                  <h4>Keranjang Kamu Kosong</h4>
+                  <h4>Your cart is empty</h4>
                   <p>
-                    Sepertinya kamu belum menambahkan apapun ke keranjang. Pilih
-                    menu product untuk mulai menelusuri produk - produk kami
+                  It looks like you haven't added anything to your cart. Choose
+                    product menu to start browsing our products
                   </p>
                 </div>
               ) : Array.isArray(userCart) ? (
@@ -237,7 +237,7 @@ const Navbar = () => {
                       </div>
                     </a>
                     <div className="allItemCart">
-                      <Link to="/cart">Lihat Semua Item {itemCount}</Link>
+                      <Link to="/cart">View All Items {itemCount}</Link>
                     </div>
                   </React.Fragment>
                 ))
@@ -255,12 +255,12 @@ const Navbar = () => {
 
               <div className="profileBtn">
                 <FontAwesomeIcon icon={faUser} size="xl" />
-                <Link to="/profile">Profile Saya</Link>
+                <Link to="/profile">My Profile</Link>
               </div>
 
               <div className="pembelianBtn">
                 <FontAwesomeIcon icon={faCashRegister} size="xl" />
-                <Link to="/orderList">Pembelian</Link>
+                <Link to="/orderList">Purchase</Link>
               </div>
 
               <div className="logOutBtn">

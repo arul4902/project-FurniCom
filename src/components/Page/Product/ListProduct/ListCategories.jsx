@@ -22,15 +22,15 @@ const ListCategories = ({setActiveProduct, activeProduct, setFiltered, product})
           </li>
 
           <li className={activeProduct === 1 ? "active" : ""} onClick={() => setActiveProduct(1)}>
-            Kursi
+          Chair
           </li>
 
           <li className={activeProduct === 2 ? "active" : ""} onClick={() => setActiveProduct(2)}>
-            Meja
+          Table
           </li>
 
           <li className={activeProduct === 3 ? "active" : ""} onClick={() => setActiveProduct(3)}>
-            Lemari
+          Cupboard
           </li>
         </ul>
       </div>

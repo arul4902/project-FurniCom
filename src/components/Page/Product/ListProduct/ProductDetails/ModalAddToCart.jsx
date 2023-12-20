@@ -28,7 +28,7 @@ const ModalAddToCart = ({ open, onClose, thisProduct }) => {
           <FontAwesomeIcon icon={faXmark} size="xl" />
         </button>
         <h2 style={{ textAlign: "center", marginTop: "20px" }}>
-          Berhasil Ditambahkan
+        Added Successfully
         </h2>
 
         <div className="thisProduct">
@@ -37,11 +37,11 @@ const ModalAddToCart = ({ open, onClose, thisProduct }) => {
             <h3>{thisProduct.nama}</h3>
           </div>
           <Link to="/cart">
-            <button className="goToCart">Lihat Keranjang</button>
+            <button className="goToCart">View Cart</button>
           </Link>
         </div>
 
-        <h2>Product Kami Lainnya</h2>
+        <h2>Our Other Products</h2>
 
         <div className="morePorductWrap">
           {randomMoreProduct.slice(0, 3).map((list) => (

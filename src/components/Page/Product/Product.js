@@ -4,7 +4,7 @@ import ProductList from "./ListProduct/ProductList";
 import { TabTitle } from "../../../utils/tabTitlePage";
 
 function Product() {
-  TabTitle("Lalasia | Product");
+  TabTitle("Online Furniture Store | Product");
 
   return (
     <div className="Product">

@@ -27,7 +27,7 @@ export default class CarouselImage extends Component {
             <CarouselHeader
               headerImg={CarouselImg1}
               title="Ramadhan Sale Offer"
-              desc="Get 40% off for frist transaction on Lalasia"
+              desc="Get 40% off for frist transaction"
             />
           </div>
           <div>
@@ -41,7 +41,7 @@ export default class CarouselImage extends Component {
             <CarouselHeader
               headerImg={CarouselImg3}
               title="Make Over Your Livingroom"
-              desc="Get very comfy Sofa only on Lalasia"
+              desc="Get very comfy Sofa "
             />
           </div>
         </Slider>

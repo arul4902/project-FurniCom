@@ -31,31 +31,31 @@ const CheckoutSuccess = () => {
 
   return (
     <div className="ContainerCheckoutSuccess">
-      <h2>Checkout Berhasil</h2>
+      <h2>Checkout Successful</h2>
       <div className="countDownTimer">
-        <h3>Segera Melakukan Pembayaran Dalam Waktu</h3>
+        <h3>Make Payment Immediately Within Time</h3>
         <h1>
           <CountdownTimer duration={8 * 60 * 60 * 1000} />
         </h1>
-        <p>Halaman Checkout ini hanya project mandiri dan tidak mengirim barang apapun</p>
+        <p>This Checkout page is only an independent project and does not send any items</p>
       </div>
 
       {dataOrder.map((data) => (
         <div className="transfer" key={data.pembayaran}>
-          <h3>Transfer Ke Nomor Rekening {data.pembayaran}:</h3>
-          <label>A/N Lalasia Project</label>
+          <h3>Transfer to Account Number {data.pembayaran}:</h3>
+          <label>Online Furniture Store</label>
           <div className="norek">
             {/* <img src={mandiri} alt="logobank" width={100} /> */}
             <h4>0000-0000-0000</h4>
           </div>
-          <p>Salin Nomor Rekening</p>
+          <p>Copy Account Number</p>
         </div>
       ))}
 
       <hr className="line" />
 
       <div className="jumlahPembayaran">
-        <h3>Jumlah Yang Harus Di Bayarkan</h3>
+        <h3>Amount to be Paid</h3>
         {dataOrder.map((datas) => (
           <h2 key={datas.orderid}>
             Rp. {numberWithCommas(datas.totaltagihan)}
@@ -65,15 +65,15 @@ const CheckoutSuccess = () => {
 
       <div className="goToHistory">
         <Link to="../orderList">
-          <p>Lihat History Pembelian</p>
+          <p>View Purchase History</p>
         </Link>
       </div>
 
       <div className="infoStatement">
         <p>
-          Pembelian akan <b>otomatis</b> dibatalkan apabila anda tidak melakukan
-          pembayaran lebih dari <b>waktu yang di tentukan</b> setelah proses
-          Checkout berhasil
+        The purchase will be <b>automatically</b> canceled if you do not do so
+          payment more than <b>the specified time</b> after the process
+          Checkout successful
         </p>
       </div>
     </div>

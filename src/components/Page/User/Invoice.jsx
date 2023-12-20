@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+/*import React, { useEffect, useState, useRef } from "react";
 import { UserAuth } from "../../context/authContext";
 import { db } from "../../../utils/firebaseConfig";
 import { onSnapshot, collection, query, where } from "firebase/firestore";
@@ -37,7 +37,7 @@ const Invoice = () => {
       <div className="navbarInvoice">
         <ReactToPrint
           trigger={() => {
-            return <button>Cetak Invoice</button>;
+            return <button>Print Invoice</button>;
           }}
           content={() => componentRef.current}
           documentTitle="Invoice Pembelian"
@@ -55,19 +55,19 @@ const Invoice = () => {
 
           <div className="peneribitan">
             <div className="diterbikanAtasNama">
-              <h5>DITERBITKAN ATAS NAMA</h5>
+              <h5>PUBLISHED ON BEHALF OF</h5>
               <p>
-                Penjual: <b>Lalasia</b>
+              Seller: <b>Online Furniture Store</b>
               </p>
             </div>
             {data.address.map((alamat) => (
               <div className="detailPembeli">
-                <h5>UNTUK</h5>
-                <p>Pembeli : {alamat.penerima}</p>
-                <p>Tanggal Pembelian : {data.dateBuy}</p>
+                <h5>FOR</h5>
+                <p>Buyer : {alamat.penerima}</p>
+                <p>Purchase date : {data.dateBuy}</p>
                 <div className="alamatPenerima">
                   <p>
-                    Alamat Pengiriman : {alamat.penerima}, {alamat.nomorhp},{" "}
+                  Shipping address : {alamat.penerima}, {alamat.nomorhp},{" "}
                     {alamat.alamat}, {alamat.kota}, {alamat.kodepos}
                   </p>
                 </div>
@@ -81,19 +81,19 @@ const Invoice = () => {
 
           <div className="tableHeader">
             <div className="tableHeaderNamaProduk">
-              <h5> INFO PRODUK </h5>
+              <h5>  PRODUCT INFO </h5>
             </div>
             <div className="jumlahBarang">
-              <h5> JUMLAH </h5>
+              <h5>  QUANTITY </h5>
             </div>
             <div className="hargaSatuan">
-              <h5> HARGA SATUAN </h5>
+              <h5> UNIT PRICE </h5>
             </div>
             <div className="totalHargaBelanja">
-              <h5> TOTAL HARGA </h5>
+              <h5> TOTAL PRICE </h5>
             </div>
           </div>
-
+          
           <span>
             <hr />
           </span>
@@ -107,10 +107,10 @@ const Invoice = () => {
                 <p>{product.qty}</p>
               </div>
               <div className="hargaSatuan">
-                <p>Rp. {numberWithCommas(product.harga)}</p>
+                <p>Rs. {numberWithCommas(product.harga)}</p>
               </div>
               <div className="totalHargaBelanja">
-                <p>Rp. {numberWithCommas(product.harga * product.qty)}</p>
+                <p>Rs. {numberWithCommas(product.harga * product.qty)}</p>
               </div>
             </div>
           ))}
@@ -121,22 +121,22 @@ const Invoice = () => {
 
           <div className="pembayaran">
             <div className="totalHargaOrder">
-              <h5>TOTAL HARGA ({data.totalitem} BARANG)</h5>
-              <h5>Rp. {numberWithCommas(data.totalharga)}</h5>
+              <h5>Total priceA ({data.totalitem} Goods)</h5>
+              <h5>Rs. {numberWithCommas(data.totalharga)}</h5>
             </div>
 
             <div className="totalOngkirOrder">
-              <p>Total Ongkos Kirim</p>
-              <p>Rp. {numberWithCommas(data.ongkir)}</p>
+              <p>Total Shipping Cost</p>
+              <p>Rs. {numberWithCommas(data.ongkir)}</p>
             </div>
 
             <hr className="lineBreak" />
 
             <div className="totalBelanjaOrder">
-              <h5>TOTAL BELANJA</h5>
-              <h5>Rp. {numberWithCommas(data.totaltagihan)}</h5>
+              <h5>TOTAL SPENDING</h5>
+              <h5>Rs. {numberWithCommas(data.totaltagihan)}</h5>
             </div>
-            <h2>BELUM LUNAS</h2>
+            <h2>NOT YET PAID OFF</h2>
           </div>
 
           <span>
@@ -145,11 +145,11 @@ const Invoice = () => {
 
           <div className="kurirNbank">
             <div className="kurirOrder">
-              <p>Kurir :</p>
+              <p>Courier:</p>
               <h5>{data.kurir}</h5>
             </div>
             <div className="pembayaranOrder">
-              <p>Metode Pembayaran</p>
+              <p>Payment method</p>
               <h5>{data.pembayaran}</h5>
             </div>
           </div>
@@ -160,8 +160,8 @@ const Invoice = () => {
 
           <div className="statement">
             <p>
-              Invoice ini hanya dummy untuk project mandiri tidak mengirim
-              barang apapun
+            This invoice is only a dummy for independent projects, not sent
+              any item
             </p>
           </div>
         </div>
@@ -171,3 +171,4 @@ const Invoice = () => {
 };
 
 export default Invoice;
+*/

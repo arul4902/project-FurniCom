@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import { UserAuth } from "../../context/authContext";
 import { db } from "../../../utils/firebaseConfig";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
@@ -50,9 +50,9 @@ const AddressModal = ({ open, onClose }) => {
               onChange={(e) => setLabelAlamat(e.target.value)}
               required
             />
-            <label className="did-floating-label">Nama Alamat</label>
+            <label className="did-floating-label">Name Address</label>
             <p>
-              Simpan Alamat Sebagai (Contoh: Alamat Rumah, Alamat Kantor...)
+            Save Address Asi (Example: Home Address, Office Address...)
             </p>
           </div>
 
@@ -65,7 +65,7 @@ const AddressModal = ({ open, onClose }) => {
                 onChange={(e) => setNamaPenerima(e.target.value)}
                 required
               />
-              <label className="did-floating-label">Nama Penerima</label>
+              <label className="did-floating-label">Recipient's name</label>
             </div>
 
             <div className="did-floating-label-content">
@@ -76,7 +76,7 @@ const AddressModal = ({ open, onClose }) => {
                 onChange={(e) => setNomorHp(e.target.value)}
                 required
               />
-              <label className="did-floating-label">Nomor HP</label>
+              <label className="did-floating-label">Mobile phone number</label>
             </div>
           </div>
 
@@ -89,7 +89,7 @@ const AddressModal = ({ open, onClose }) => {
                 onChange={(e) => setKota(e.target.value)}
                 required
               />
-              <label className="did-floating-label">Kota Atau Kecamatan</label>
+              <label className="did-floating-label">City or District</label>
             </div>
 
             <div className="did-floating-label-content">
@@ -100,7 +100,7 @@ const AddressModal = ({ open, onClose }) => {
                 onChange={(e) => setKodePos(e.target.value)}
                 required
               />
-              <label className="did-floating-label">Kode Pos</label>
+              <label className="did-floating-label">Postal code</label>
             </div>
           </div>
 
@@ -112,15 +112,15 @@ const AddressModal = ({ open, onClose }) => {
               onChange={(e) => setAlamat(e.target.value)}
               required
             />
-            <label className="did-floating-label">Detail Alamat Lengkap</label>
+            <label className="did-floating-label">Complete Address Details</label>
           </div>
 
           <div className="addressBtnAction">
             <button className="btnSaveAddress" onClick={addAddress}>
-              Simpan
+            Save
             </button>
             <button className="btnCancelSave" onClick={onClose}>
-              Batalkan
+            Cancel it
             </button>
           </div>
         </form>
@@ -130,3 +130,4 @@ const AddressModal = ({ open, onClose }) => {
 };
 
 export default AddressModal;
+*/

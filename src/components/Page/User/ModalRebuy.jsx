@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { numberWithCommas } from "../../../utils/numberWithCommas";
@@ -96,3 +96,4 @@ const ModalRebuy = ({ productRebuy, onClose }) => {
 };
 
 export default ModalRebuy;
+*/

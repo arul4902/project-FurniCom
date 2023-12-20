@@ -20,7 +20,7 @@ const Profile = () => {
   const [like, setLike] = useState(true);
   const { user } = UserAuth();
   const navigate = useNavigate();
-  TabTitle(`Lalasia | Profile ${user?.email}`);
+  TabTitle(`Online Furniture Store | Profile ${user?.email}`);
 
   useEffect(() => {
     onSnapshot(doc(db, "users", `${user?.email}`), (doc) => {
@@ -61,15 +61,15 @@ const Profile = () => {
       </div>
 
       <div className="titleSavedProduct">
-        <h1>Produk yang sudah anda sukai</h1>
+        <h1>Products you already like</h1>
       </div>
 
       <div className="userSavedProduct">
         {SavedProductCount === 0 ? (
           <div className="emptyWishList">
             <img src={emptyWishList} alt="emptywishlist" width={300} />
-            <h2>Tampak Nya Kamu Belum memasukan produk ke dalam Wishlist</h2>
-            <p>Masuk menu product dan pilih produk yang ingin kamu sukai</p>
+            <h2>It looks like you haven't included the product in your wishlistt</h2>
+            <p>Enter the product menu and select the product you want to like</p>
           </div>
         ) : (
           <>
@@ -85,7 +85,7 @@ const Profile = () => {
                         <img src={item?.img} alt="ProductImage" />
                         <h1>{item?.nama}</h1>
                         <p>{item?.tagline}</p>
-                        <h2>Rp.{numberWithCommas(item?.harga)}</h2>
+                        <h2>Rs.{numberWithCommas(item?.harga)}</h2>
                       </a>
                       <span
                         style={{ cursor: "pointer" }}

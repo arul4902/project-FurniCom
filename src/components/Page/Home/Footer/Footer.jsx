@@ -1,6 +1,6 @@
 import React from "react";
 import "../Footer/Footer.css";
-import LogoFooter from "../../../assets/Logo.png";
+import LogoFooter from "../../../assets/furniture logo.jpeg";
 
 const Footer = () => {
   return (
@@ -8,14 +8,13 @@ const Footer = () => {
       <div className="icondisclaimer">
         <img src={LogoFooter} alt="LogoFooter" />
         <p>
-          Lalasia merupakan project Frontend mandiri. <br />
-          Didesain oleh
-          <a href="https://www.figma.com/@sicleteam" target="_blank"> Sicle Team </a>
-          Dan di Coding Oleh
-          <a href="https://github.com/Dandy-CP" target="_blank"> Dandy Candra. </a>
+        It is an independent Frontend project.</p>
+          <a href="https://www.figma.com/@sicleteam" target="__blank"> Figma </ a>
+         <p> And in Coding By</p>
+          <a href="https://github.com/arul4902" target="__blank"> github </a>
           <br />
-          <a href="https://github.com/Dandy-CP/project-lalasia" target="_blank">Selengkap Nya.</a>
-        </p>
+          <a href="https://github.com/arul4902" target="_blank">arul4902</a>
+        
       </div>
       <div className="menufooter">
         <div className="product">

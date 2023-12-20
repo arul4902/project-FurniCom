@@ -12,9 +12,9 @@ function NoPage() {
       <div className="nopage">
         <img src={noPage} alt="404NoPage" width={600} />
         <h1>404 - PAGE NOT FOUND</h1>
-        <h2>Halaman yang anda cari tidak di temukan</h2>
+        <h2>The page you are looking for could not be found</h2>
         <Link to="./">
-          <button className="btnGoHome">Kembali Ke Home Page</button>
+          <button className="btnGoHome">Return to Home Pagee</button>
         </Link>
       </div>
     </div>

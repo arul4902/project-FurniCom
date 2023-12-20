@@ -150,7 +150,7 @@ const ProductDetails = () => {
             ) : (
               <FontAwesomeIcon icon={faHeartFilled} size="xl" />
             )}
-            <span className="tooltiptext">Tambahkan Ke Wishlist</span>
+            <span className="tooltiptext">Add To Wishlist</span>
           </div>
 
           <h2>{product.nama || <Skeleton />}</h2>
