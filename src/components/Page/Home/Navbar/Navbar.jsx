@@ -18,7 +18,7 @@ import "../Navbar/DropMenuUser.css";
 import "../Navbar/DropMenuCart.css";
 import "../Navbar/HamburgerMenu.css";
 
-import Logo from "../../../assets/furniture logo.jpeg";
+import Logo from "../../../assets/furni logo.jpg";
 import MenuHamburgerIcon from "../../../assets/HamburgerMenuIcon.png";
 import CrossIcon from "../../../assets/CrossIcon.png";
 import UserProfilePict from "../../../assets/blank-profile-picture.png";
@@ -151,7 +151,7 @@ const Navbar = () => {
             Product
           </Link>
 
-          <a href="https://github.com/Dandy-CP/project-lalasia" className="menu-item" target="_blank">
+          <a href="https://github.com/arul4902/project-lalasia" className="menu-item" target="_blank">
               About Project
           </a>
         </Menu>
@@ -182,7 +182,7 @@ const Navbar = () => {
           </li>
 
           <li className="Menu">
-            <a href="https://github.com/Dandy-CP/project-lalasia" target="_blank">
+            <a href="https://github.com/arul4902/project-lalasia" target="_blank">
               About Project
             </a>
           </li>

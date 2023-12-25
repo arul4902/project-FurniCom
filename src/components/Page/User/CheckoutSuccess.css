@@ -1,4 +1,4 @@
-/*.ContainerCheckoutSuccess {
+.ContainerCheckoutSuccess {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -8,7 +8,7 @@
 
 /* .ContainerCheckoutSuccess p {
   font-size: 25px;
-} 
+} */
 
 .countDownTimer {
   display: flex;
@@ -153,4 +153,3 @@
     width: 300px;
   }
 }
-*/

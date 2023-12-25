@@ -1,4 +1,4 @@
-/*import React, { useState } from "react";
+import React, { useState } from "react";
 import { UserAuth } from "../../context/authContext";
 import { db } from "../../../utils/firebaseConfig";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
@@ -29,7 +29,7 @@ const ModalEditAddress = ({ open, onClose, address }) => {
         }),
       });
     }
-  }; 
+  }; */
 
   if (!open) return null;
 
@@ -129,7 +129,7 @@ const ModalEditAddress = ({ open, onClose, address }) => {
             </>
           ))}
           <div className="addressBtnAction">
-            <button className="btnSaveAddress" /* onClick={addAddress} >
+            <button className="btnSaveAddress" /* onClick={addAddress}*/ >
               Simpan
             </button>
             <button className="btnCancelSave" onClick={onClose}>
@@ -143,4 +143,4 @@ const ModalEditAddress = ({ open, onClose, address }) => {
 };
 
 export default ModalEditAddress;
-*/
+

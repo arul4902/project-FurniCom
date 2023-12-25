@@ -58,7 +58,7 @@ const CheckoutSuccess = () => {
         <h3>Amount to be Paid</h3>
         {dataOrder.map((datas) => (
           <h2 key={datas.orderid}>
-            Rp. {numberWithCommas(datas.totaltagihan)}
+            Rs. {numberWithCommas(datas.totaltagihan)}
           </h2>
         ))}
       </div>

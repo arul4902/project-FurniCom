@@ -51,7 +51,7 @@ const ModalAddToCart = ({ open, onClose, thisProduct }) => {
                 <p>{list.category.nama}</p>
                 <h1>{list.nama}</h1>
                 <p>{list.tagline}</p>
-                <h2>Rp.{numberWithCommas(list.harga)}</h2>
+                <h2>Rs.{numberWithCommas(list.harga)}</h2>
               </a>
             </div>
           ))}

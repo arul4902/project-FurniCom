@@ -1,4 +1,4 @@
-/*import React, { useState } from "react";
+import React, { useState } from "react";
 import { UserAuth } from "../../context/authContext";
 import { db } from "../../../utils/firebaseConfig";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
@@ -130,4 +130,4 @@ const AddressModal = ({ open, onClose }) => {
 };
 
 export default AddressModal;
-*/
+

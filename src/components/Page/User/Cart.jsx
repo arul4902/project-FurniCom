@@ -1,4 +1,4 @@
-/*import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { UserAuth } from "../../context/authContext";
 import { updateDoc, doc, onSnapshot, arrayUnion } from "firebase/firestore";
 import { db } from "../../../utils/firebaseConfig";
@@ -88,7 +88,7 @@ const Cart = () => {
     );
     setNotes(text.target.value);
     console.log(text.target.value);
-  } 
+  } */
 
   const productRef = doc(db, "users", `${user?.email}`);
   const removeProduct = async (itemID) => {
@@ -143,7 +143,7 @@ const Cart = () => {
           }
         }, 0)
       : null;
-  }; 
+  };  */
 
   const totalBayar = Array.isArray(cartItem)
     ? cartItem.reduce(function (result, item) {
@@ -202,10 +202,10 @@ const Cart = () => {
               }
               onChange={handleSelected}
             />
-            <label>Pilih Semua Item</label> }
+            <label>Pilih Semua Item</label>*/ }
               <h3>Cart Product</h3>
             </div>
-            {/* <button>Hapus Item</button> }
+            {/* <button>Hapus Item</button>*/ }
           </div>
           <div className="itemsCartUserBox">
             {itemCount === 0 ? (
@@ -231,7 +231,7 @@ const Cart = () => {
                       value={items?.isChecked || false}
                       checked={items?.isChecked || false}
                       onChange={handleSelected}
-                    /> }
+                  /> */}
                           <img src={items.img} alt="productImage" width={150} />
                           <div className="descItem">
                             <h3
@@ -245,7 +245,7 @@ const Cart = () => {
                             </h3>
                             <p>{items.tagline}</p>
                             <h4>Rs.{numberWithCommas(items.harga)}</h4>
-                            {/* <input type="text" placeholder="Tulis Catatan Tambahan" /> }
+                            {/* <input type="text" placeholder="Tulis Catatan Tambahan" />*/ }
                           </div>
                         </div>
 
@@ -392,4 +392,4 @@ const Cart = () => {
 };
 
 export default Cart;
-*/
+

@@ -1,4 +1,4 @@
-/*import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { UserAuth } from "../../context/authContext";
 import { db } from "../../../utils/firebaseConfig";
 import { onSnapshot, collection, query, where } from "firebase/firestore";
@@ -171,4 +171,4 @@ const Invoice = () => {
 };
 
 export default Invoice;
-*/
+

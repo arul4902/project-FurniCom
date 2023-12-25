@@ -1,4 +1,4 @@
-/*import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { UserAuth } from "../../context/authContext";
 import { updateDoc, doc, onSnapshot, arrayRemove, collection, addDoc } from "firebase/firestore";
 import { db } from "../../../utils/firebaseConfig";
@@ -234,7 +234,7 @@ const CheckOut = () => {
                 <label>Select Delivery courier</label>
                 <select
                   name="kurir"
-                  /* value={ongkir} 
+                  /* value={ongkir} */
                   onChange={(e) => {
                     setOngkir(e.target.value);
                     setJenisKurir(
@@ -339,4 +339,4 @@ const CheckOut = () => {
 };
 
 export default CheckOut;
-*/
+

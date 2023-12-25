@@ -14,7 +14,7 @@ const CarouselCard = ({ menu }) => {
         <p>{menu.category.nama}</p>
         <h1>{menu.nama}</h1>
         <p>{menu.tagline}</p>
-        <h2>Rp.{numberWithCommas(menu.harga)}</h2>
+        <h2>Rs.{numberWithCommas(menu.harga)}</h2>
       </a>
     </div>
   );

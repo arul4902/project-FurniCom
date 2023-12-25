@@ -1,4 +1,4 @@
-/*.containerCartPage {
+.containerCartPage {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -402,4 +402,4 @@
     font-size: 13px;
   }
 }
-*/
+

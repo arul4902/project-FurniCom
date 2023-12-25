@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../../context/authContext";
 import { TabTitle } from "../../../utils/tabTitlePage";
 
-import Logo from "../../assets/furniture logo.jpeg";
+import Logo from "../../assets/furni logo.jpg";
 import GoogleIcon from "../../assets/GoogleIcon.png";
 import FacebookIcon from "../../assets/FacebookIcon.png";
 import "./LoginNSignUp.css";

@@ -1,5 +1,5 @@
-/*.containerModalBackConfirm {
-  /*   display: flex;
+.containerModalBackConfirm {
+     display: flex;
   flex-direction: column;
   justify-content: center; 
   width: 800px;
@@ -88,4 +88,3 @@
     font-size: 10px;
   }
 }
-*/

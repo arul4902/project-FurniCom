@@ -1,4 +1,4 @@
-/*import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { numberWithCommas } from "../../../utils/numberWithCommas";
 import { Link } from "react-router-dom";
@@ -184,4 +184,4 @@ const ModalDetailOrder = ({ buyDetail, onClose }) => {
 };
 
 export default ModalDetailOrder;
-*/
+

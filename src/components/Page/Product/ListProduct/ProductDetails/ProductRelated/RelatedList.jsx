@@ -40,7 +40,7 @@ const RelatedList = () => {
                       <p>{productRelated.category.nama}</p>
                       <h1>{productRelated.nama}</h1>
                       <p>{productRelated.tagline}</p>
-                      <h2>Rp.{numberWithCommas(productRelated.harga)}</h2>
+                      <h2>Rs.{numberWithCommas(productRelated.harga)}</h2>
                     </a>
                   </div>
                 </div>

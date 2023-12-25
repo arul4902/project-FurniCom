@@ -52,7 +52,7 @@ const SearchProduct = () => {
                   <p>{value.category.nama}</p>
                   <h1>{value.nama}</h1>
                   <p>{value.tagline}</p>
-                  <h2>Rp. {numberWithCommas(value.harga)}</h2>
+                  <h2>Rs. {numberWithCommas(value.harga)}</h2>
                 </span>
               </a>
             );
