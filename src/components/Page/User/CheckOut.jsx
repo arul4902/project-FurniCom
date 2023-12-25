@@ -16,7 +16,7 @@ import Mandiri from "../../assets/phonepay2.jpg";
 import BCA from "../../assets/gpay.jpg";
 import BRI from "../../assets/paypal.jpg";
 import { TabTitle } from "../../../utils/tabTitlePage";
-
+/*start*/
 const CheckOut = () => {
   const [itemCheckout, setItemCheckout] = useState([]);
   const [itemCart, setItemCart] = useState([]);
