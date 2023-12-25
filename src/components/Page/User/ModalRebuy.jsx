@@ -64,7 +64,7 @@ const ModalRebuy = ({ productRebuy, onClose }) => {
           <button className="clsModalRebuy" onClick={onClose}>
             <FontAwesomeIcon icon={faXmark} size="xl" />
           </button>
-          <h3 style={{ textAlign: "center" }}>Beli Kembali Produk kami</h3>
+          <h3 style={{ textAlign: "center" }}>Buy Back our Products</h3>
           <div className="listProductRebuy">
             {productRebuy.map((data) =>
               data.itemCheckout.map((list) => (
@@ -83,7 +83,7 @@ const ModalRebuy = ({ productRebuy, onClose }) => {
                       notifyAddToCart();
                     }}
                   >
-                    +Keranjang
+                   +Basket
                   </button>
                 </div>
               ))

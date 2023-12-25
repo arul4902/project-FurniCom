@@ -12,9 +12,9 @@ import BackPageModal from "./BackPageModal";
 import "./CheckOut.css";
 import addAddresImg from "../../assets/addAddress.svg";
 import Logo from "../../assets/Logo.png";
-import Mandiri from "../../assets/mandiri.png";
-import BCA from "../../assets/BCA.png";
-import BRI from "../../assets/BRI.png";
+import Mandiri from "../../assets/phonepay2.jpg";
+import BCA from "../../assets/gpay.jpg";
+import BRI from "../../assets/paypal.jpg";
 import { TabTitle } from "../../../utils/tabTitlePage";
 
 const CheckOut = () => {
@@ -251,7 +251,7 @@ const CheckOut = () => {
                       kurir={data.jenis}
                       key={data.jenis}
                     >
-                      {data.jenis} Rp.{numberWithCommas(data.ongkir)}
+                      {data.jenis} Rs.{numberWithCommas(data.ongkir)}
                     </option>
                   ))}
                 </select>
@@ -263,7 +263,7 @@ const CheckOut = () => {
               <div className="bank">
                 <div className="mandiri">
                   <img src={Mandiri} alt="mandiri" width={100} />
-                  <label htmlFor="mandiri">Independent</label>
+                  <label htmlFor="mandiri">Phonepe</label>
                   <input
                     type="radio"
                     id="mandiri"
@@ -275,7 +275,7 @@ const CheckOut = () => {
 
                 <div className="bca">
                   <img src={BCA} alt="bca" width={120} />
-                  <label htmlFor="bca">BCA</label>
+                  <label htmlFor="bca">Gpay</label>
                   <input
                     type="radio"
                     id="bca"
@@ -287,7 +287,7 @@ const CheckOut = () => {
 
                 <div className="bri">
                   <img src={BRI} alt="bri" width={150} />
-                  <label htmlFor="bri">BRI</label>
+                  <label htmlFor="bri">PayPal</label>
                   <input
                     type="radio"
                     id="bri"
@@ -309,11 +309,11 @@ const CheckOut = () => {
               <h4>Rs. {numberWithCommas(totalHarga)}</h4>
             </div>
             <div className="totalBayarOngkir">
-              <h4>Total Ongkos Kirim {jenisKurir}</h4>
+              <h4>Total Shipping Cost {jenisKurir}</h4>
               <h4>Rs. {numberWithCommas(ongkir)}</h4>
             </div>
             <div className="totalTagihan">
-              <h4>Total Tagihan</h4>
+              <h4>Total bill</h4>
               <h4>Rs. {numberWithCommas(totalTagihan)}</h4>
             </div>
           </div>

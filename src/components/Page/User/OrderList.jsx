@@ -82,12 +82,12 @@ const OrderList = () => {
       ) : null}
 
       <div className="containerOrderList">
-        <h2>Daftar Transaksi</h2>
+        <h2>Transaction List</h2>
         {orderListData.length === 0 ? (
           <div className="boxOrderWrap">
             <div className="emptyListHistory">
-              <h4>Tampak nya kamu belum membeli Sesuatu di Lalasia</h4>
-              <p>Cek menu product dan segera wujudkan pembelian mu</p>
+              <h4>It seems you haven't bought anything </h4>
+              <p>Check the product menu and immediately make your purchase</p>
             </div>
           </div>
         ) : (
@@ -100,7 +100,7 @@ const OrderList = () => {
                     <p>Order</p>
                   </b>
                   <p>{list.dateBuy}</p>
-                  <p className="statusOrder">Belum Lunas</p>
+                  <p className="statusOrder">Not yet paid off</p>
                   <p>{list.invoice}</p>
                 </div>
 
@@ -115,7 +115,7 @@ const OrderList = () => {
                       <div className="namaProduct">
                         <h4>{listProduct.nama}</h4>
                         <p>
-                          {list.totalitem} Barang x Rp.
+                          {list.totalitem} Goods x Rs.
                           {numberWithCommas(listProduct.harga)}
                         </p>
                         <p>+{list.totalitem} Total Product</p>
@@ -124,8 +124,8 @@ const OrderList = () => {
                       <hr />
 
                       <div className="orderTagihan">
-                        <p>Total Tagihan</p>
-                        <h3>Rp.{numberWithCommas(list.totaltagihan)}</h3>
+                        <p>Total bill</p>
+                        <h3>Rs.{numberWithCommas(list.totaltagihan)}</h3>
                       </div>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ const OrderList = () => {
                       setBuyDetail(buyDetailData);
                     }}
                   >
-                    Lihat Detail Transaksi
+                    View Transaction Details
                   </p>
                   <button
                     className="btnRebuy"
@@ -147,7 +147,7 @@ const OrderList = () => {
                       setRebuyProduct(rebuyPorductData);
                     }}
                   >
-                    Beli Lagi
+                    Buy More
                   </button>
                 </div>
               </div>

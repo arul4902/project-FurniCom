@@ -39,7 +39,7 @@ const ModalEditAddress = ({ open, onClose, address }) => {
         <button onClick={onClose} className="closeModal">
           X
         </button>
-        <h3>Ubah Alamat Pengiriman</h3>
+        <h3>Change Shipping Address</h3>
         <hr className="itemLineBreak" />
         <form className="formAddress">
           {address.map((data) => (
@@ -53,9 +53,9 @@ const ModalEditAddress = ({ open, onClose, address }) => {
                   onChange={(e) => setLabelAlamat(e.target.value)}
                   required
                 />
-                <label className="did-floating-label">Nama Alamat</label>
+                <label className="did-floating-label">Name Address</label>
                 <p>
-                  Simpan Alamat Sebagai (Contoh: Alamat Rumah, Alamat Kantor...)
+                Save Address As (Example: Home Address, Office Address...)
                 </p>
               </div>
 
@@ -69,7 +69,7 @@ const ModalEditAddress = ({ open, onClose, address }) => {
                     onChange={(e) => setNamaPenerima(e.target.value)}
                     required
                   />
-                  <label className="did-floating-label">Nama Penerima</label>
+                  <label className="did-floating-label">Recipient's name</label>
                 </div>
 
                 <div className="did-floating-label-content">
@@ -81,7 +81,7 @@ const ModalEditAddress = ({ open, onClose, address }) => {
                     onChange={(e) => setNomorHp(e.target.value)}
                     required
                   />
-                  <label className="did-floating-label">Nomor HP</label>
+                  <label className="did-floating-label">Mobile phone number</label>
                 </div>
               </div>
 
@@ -96,7 +96,7 @@ const ModalEditAddress = ({ open, onClose, address }) => {
                     required
                   />
                   <label className="did-floating-label">
-                    Kota Atau Kecamatan
+                  City or District
                   </label>
                 </div>
 
@@ -109,7 +109,7 @@ const ModalEditAddress = ({ open, onClose, address }) => {
                     onChange={(e) => setKodePos(e.target.value)}
                     required
                   />
-                  <label className="did-floating-label">Kode Pos</label>
+                  <label className="did-floating-label">Postal code</label>
                 </div>
               </div>
 
@@ -123,17 +123,17 @@ const ModalEditAddress = ({ open, onClose, address }) => {
                   required
                 />
                 <label className="did-floating-label">
-                  Detail Alamat Lengkap
+                Complete Address Details
                 </label>
               </div>
             </>
           ))}
           <div className="addressBtnAction">
             <button className="btnSaveAddress" /* onClick={addAddress}*/ >
-              Simpan
+            Save
             </button>
             <button className="btnCancelSave" onClick={onClose}>
-              Batalkan
+            Cancel it
             </button>
           </div>
         </form>
