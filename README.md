@@ -1,11 +1,7 @@
 
-# Project Lalasia
+# Project Furnicom
 
-Lalasia is a standalone Frontend project. Designed by Sicle Team Coded by Dandy Candra.
-
-Preview Demo : https://project-lalasia.vercel.app/
-
-
+Furnicom is a  Frontend project. Designed by Arul S.
 
 
 ## Tech Stack
@@ -50,28 +46,3 @@ Preview Demo : https://project-lalasia.vercel.app/
 - Invoice
 
 
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Dandy-CP/project-lalasia.git
-```
-
-Go to the project directory
-
-```bash
-  cd project-lalasia
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
