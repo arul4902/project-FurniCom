@@ -158,7 +158,7 @@ const ProductDetails = () => {
           <p>
             <ReadMore>{product.description}</ReadMore>
           </p>
-          <h2>Rp.{numberWithCommas(product.harga) || <Skeleton />}</h2>
+          <h2>Rs.{numberWithCommas(product.harga) || <Skeleton />}</h2>
 
           <Quantitiy quantitiy={quantitiy} setQuantitiy={SetQuantitiy} />
 

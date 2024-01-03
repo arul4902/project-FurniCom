@@ -6,6 +6,10 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { UserAuth } from "../../../context/authContext";
 import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "../../../../utils/firebaseConfig";
+
+
+
+
 import {
   faUser,
   faArrowRightFromBracket,
@@ -151,9 +155,9 @@ const Navbar = () => {
             Product
           </Link>
 
-          <a href="https://github.com/arul4902/project-lalasia" className="menu-item" target="_blank">
-              About Project
-          </a>
+          <Link className="menu-item" to="/aboutus" onClick={closeSideBar}>
+          About Us
+        </Link>
         </Menu>
       </div>
 
@@ -180,12 +184,23 @@ const Navbar = () => {
               Product
             </NavLink>
           </li>
-
           <li className="Menu">
-            <a href="https://github.com/arul4902/project-lalasia" target="_blank">
-              About Project
+            <NavLink
+              to="/aboutus"
+              className={({ isActive }) =>
+                isActive ? activeClassName : undefined
+              }
+            >
+              About us
+            </NavLink>
+          </li>
+
+         {/* <li className="Menu">
+            <a href="https://github.com/arul4902/FurniCom--Project" target="_blank">
+            About Project 
             </a>
           </li>
+            */}
         </ul>
       </nav>
 
@@ -232,7 +247,7 @@ const Navbar = () => {
                           <h1>
                             {item.qty}x {item.nama}
                           </h1>
-                          <h2>Rp. {numberWithCommas(item.harga)}</h2>
+                          <h2>Rs. {numberWithCommas(item.harga)}</h2>
                         </div>
                       </div>
                     </a>

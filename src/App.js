@@ -16,6 +16,9 @@ import Checkout from "./components/Page/User/CheckOut";
 import CheckoutSuccess from "./components/Page/User/CheckoutSuccess";
 import OrderList from "./components/Page/User/OrderList";
 import Invoice from "./components/Page/User/Invoice";
+import AboutUs from './components/Page/Home/AboutUs/aboutus';
+
+
 
 import "./App.css";
 
@@ -27,6 +30,8 @@ function App() {
           <Routes>
             <Route path ="login" element={<LogIn />} />
             <Route path ="signup" element={<SignUp />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            
 
             <Route path="checkout" element={
               <ProtectedRoute>

@@ -19,7 +19,7 @@ const ItemProduct = ({ product, loading }) => {
           <p>{product.category.nama}</p>
           <h1>{product.nama}</h1>
           <p>{product.tagline}</p>
-          <h2>Rp.{numberWithCommas(product.harga)}</h2>
+          <h2>Rs.{numberWithCommas(product.harga)}</h2>
         </a>
       </div>
     </div>
